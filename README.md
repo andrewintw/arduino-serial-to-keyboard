@@ -23,6 +23,11 @@
 * [Debugging with the Digispark](https://digistump.com/wiki/digispark/tutorials/debugging)
 
 
+### Library
+
+clone the repos `git@github.com:andrewintw/Digispark_SoftSerial-INT0.git` to libraries/ folder.
+
+
 ## How To Test
 
 1. Chech your new HID Keyboard Device
