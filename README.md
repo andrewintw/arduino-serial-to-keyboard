@@ -16,4 +16,7 @@
 
 * [Connecting and Programming Your Digispark](http://digistump.com/wiki/digispark/tutorials/connecting)
 
+![](images/DigiSpark_Pinout.png)
+
 ![](images/DigiSpark_Upload.png)
+
