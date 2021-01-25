@@ -32,14 +32,14 @@ clone the repos `git@github.com:andrewintw/Digispark_SoftSerial-INT0.git` to lib
 
 1. Chech your new HID Keyboard Device
 
-![](images/images/new-hid-keyboard-device.png)
+![](images/new-hid-keyboard-device.png)
 
 
 2. Start a virtual machine on VirtualBox and attach the HID keyboard device to the virtual machine. 
 
 note: Your host system will remove the HID keyboard.
 
-![](images/images/attache-digikey-to-vm.png)
+![](images/attache-digikey-to-vm.png)
 
 
 3. Connect to UART with 9600-8-n-1 and start typing.
