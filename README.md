@@ -23,6 +23,11 @@
 * [Debugging with the Digispark](https://digistump.com/wiki/digispark/tutorials/debugging)
 
 
+### DigiUSB
+
+* [Example programs for the DigiUSB library](https://github.com/digistump/DigisparkExamplePrograms)
+
+
 ### Library
 
 clone the repos `git@github.com:andrewintw/Digispark_SoftSerial-INT0.git` to libraries/ folder.
