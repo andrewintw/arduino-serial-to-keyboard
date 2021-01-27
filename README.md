@@ -159,7 +159,7 @@ Peter Burkimsher 來自紐西蘭，我蠻驚訝地發現，2014~2018 之間他�
 	* [DigiSpark_SoftSerial_to_Keyboard](https://github.com/andrewintw/arduino-serial-to-keyboard/blob/main/DigiSpark/DigiSpark_SoftSerial_to_Keyboard/DigiSpark_SoftSerial_to_Keyboard.ino) 是最終的運作版本，其餘 "Test_DigiSpark_" 開頭的程式都只是測試程式。
 
 
-我的測試環境是 Windows 7。另外，因為我不會 Windows 程式設計，所以我目前不打算處理滑鼠的部份了。有想過用 Python 寫，但是需要更長的學習時間，所以目前先擱置這個計劃。
+我的測試環境是 Windows 7。另外，因為我不會 Windows 程式設計，所以我目前不打算處理滑鼠的部份了。反正不管是 Windows/Mac/Linux 都可以找到對應的 serial 軟體。是有想過用 Python 寫，但是需要更長的學習時間，所以目前先擱置這個計劃。
 
 
 ## ProMicro_SerialToKeyboard
