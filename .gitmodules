@@ -1,0 +1,3 @@
+[submodule "libraries/Digispark_SoftSerial-INT0"]
+	path = libraries/Digispark_SoftSerial-INT0
+	url = git@github.com:andrewintw/digispark_softserial-int0.git
