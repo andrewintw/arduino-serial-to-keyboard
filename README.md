@@ -3,13 +3,20 @@
 *使用 arduino-serial-to-keyboard*
 
 
-## 前言
+## 前言 -- 關於 "Headless"
 
 最近因為 pi 的學習需求接觸了 `Headless installation`，所謂的 "Headless" 就是沒有 User Interface，意指在沒有螢幕、鍵盤、滑鼠的狀況下安裝系統。
 
-關於 Headless 的安裝方式不是這一篇要講的重點，如果你曾使用過 Pi Zero，應該會對這樣的安裝方式感到熟悉。
+關於 Headless 的安裝方式不是這一篇要講的重點，如果你曾使用過 Pi Zero，應該會對這樣的安裝方式感到熟悉。通常使用 Headless 模式安裝的狀況都是沒有多餘的螢幕鍵盤，或者...只是懶惰 XD。
 
-幾週前我看到了關於 `HDMI Input` 的資訊，以下這個影片示範得非常清楚。（點擊下圖觀看影片）
+Headless 安裝還有一個特點，當你安裝的對象在安裝設定完成之後，通常就是保持 Headless 的狀態了。例如你想要使用 pi 當作伺服器，因此安裝配置的過程中你可能會需要螢幕滑鼠鍵盤的幫忙，但是一旦配置完畢，這些週邊就可以移除，改用網路的方式存取設定。因此螢幕滑鼠鍵盤只是暫時需要，所以通常不會願意花費太多成本在準備這些週邊上。
+
+
+## 初始想法
+
+但既使是 Headless 的安裝方式，事實上在安裝現場還是會有一組螢幕滑鼠鍵盤...是的，就是你用來操作設定用的筆電/電腦。那麼，有沒有可能直接共用筆電上的螢幕滑鼠鍵盤給 Raspberry Pi 呢？
+
+幾週前我在社群看到了關於 `HDMI Input` 的資訊，以下這個影片示範得非常清楚。（點擊下圖觀看影片）
 
 [![](https://img.youtube.com/vi/GkbmeYgTVlc/sddefault.jpg)](https://youtu.be/GkbmeYgTVlc)
 
@@ -60,12 +67,12 @@ USB HDMI 影像擷取插入筆電後，電腦端就會多一個 Video Input 的�
 
 [![](https://img.youtube.com/vi/eb2j-qtWTP0/sddefault.jpg)](https://www.youtube.com/watch?v=eb2j-qtWTP0)
 
-但缺點就是 --- 超貴！XD [PChome 購物上](https://24h.pchome.com.tw/prod/DCAX4H-A9008WPCS)的售價是 9700！對於一個不經常有這種需求的人來說不算是值得投資的東西。
+但缺點就是 --- 超貴！XD [PChome 購物上](https://24h.pchome.com.tw/prod/DCAX4H-A9008WPCS)的售價是 $9700！對於一個不經常有這種需求的人來說不算是值得投資的東西。
 
 
 ## 自造想法
 
-我突然想到某些版本的 Arduino 開發板可以將自己模擬成一台 HID Keyboard。例如曾經很熱門的 [Makey Makey](https://makeymakey.com/)，如果你去看它所公布的[電路圖](http://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/makey_makey-v12.pdf)，你會發現它之所以能跟電腦遊戲互動，就是因為它的主要微處理器 Atmega32u4 可以模擬成 HID 鍵盤的關係。
+研究便宜的解決方案時，我突然想到某些版本的 Arduino 開發板可以將自己模擬成一台 HID Keyboard。例如曾經很熱門的 [Makey Makey](https://makeymakey.com/)，如果你去看它所公布的[電路圖](http://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/makey_makey-v12.pdf)，你會發現它之所以能跟電腦遊戲互動，就是因為它的主要微處理器 Atmega32u4 可以模擬成 HID 鍵盤的關係。
 
 在 Arduino 開發板系列中，容易取得的 Atmega32u4 開發板有 [Leonardo](https://store.arduino.cc/usa/leonardo) 和 [Pro Micro](https://www.sparkfun.com/products/12640)。以體積來說，當然是 Pro Micro 比較小巧方便。
 
