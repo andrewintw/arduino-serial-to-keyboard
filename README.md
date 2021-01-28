@@ -45,7 +45,7 @@ USB HDMI 影像擷取插入筆電後，電腦端就會多一個 Video Input 的�
 但就算示意圖的那三台電腦都換成筆電，你還是需要一組 KVM 當作 source，筆電本身的 KVM 是無法共用給其它電腦的。
 
 
-### 2. Synergy
+### 2. Synergy (or Barrier)
 
 [Synergy](https://zh.wikipedia.org/wiki/Synergy) 是一個很不錯的解決方案，只要你的 host（筆電）和 target（樹莓派）在同一個區網內，就可以透過網路共享筆電的滑鼠鍵盤（沒有螢幕，你需要在 target 端安裝螢幕）。
 
