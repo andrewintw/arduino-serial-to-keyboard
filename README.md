@@ -253,7 +253,7 @@ DigiSpark/ 的 [libraries/](https://github.com/andrewintw/arduino-serial-to-keyb
 
 ![](images/wiring-diagram.png)
 
-你需要對照 Pro Micro/DigiSpar 的 pinout 圖：
+你需要對照 Pro Micro/DigiSpark 的 pinout 圖：
 
 Pro Micro 是 pin1（TX）、pin0（RX）。
 
@@ -329,9 +329,9 @@ VM Demo 影片：（點擊下圖觀看影片）
 
 一般來說，你可以將 pi 的 console log 導向 UART 介面，如此一來或許也不需要使用這篇提到的 serial-to-HID-keyboard 做法。但我不確定這件事情是不是需要做設定？這個 demo 影片中所執行的 image 是 Home Assistant 官方提供的 pi image。系統開機後不會進入視窗介面，而是被限制在一個 CLI 選單中。打 login 進入 shell 環境後可以使用 tab 鍵做指令的 auto-complete。
 
-一般來說 linux kernel 會預設啟用 USB keyboard 的驅動程式，你可以發現在插入 DigiSpark 後，需等待一段時間讓驅動程式載入核心後才能使用（DigiSpark 會亮燈）。
+pi 的 Linux kernel 通常會預設編入 USB keyboard 的驅動程式，影片中可以發現在插入 DigiSpark 後，需等待一段時間讓驅動程式載入核心後才能使用（DigiSpark 會亮燈）。
 
-你可以隨身帶著 USB HDMI 擷取卡、和這條 Serial-to-HID-keyboard 的線材。從此走到哪都不用怕沒有鍵盤螢幕可以操作 Raspberry Pi 過著幸福快樂的日子 XD
+OK！打完收工，你現在可以隨身帶著 USB HDMI 擷取卡、和這條 Serial-to-HID-keyboard 的線材（到底誰會這樣 XD）。從此走到哪都不用怕沒有鍵盤螢幕可以操作 Raspberry Pi（過著幸福快樂的日子 XD
 
 ![](images/hdmi-ser2hid.jpg)
 
