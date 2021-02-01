@@ -325,7 +325,7 @@ VM Demo 影片：（點擊下圖觀看影片）
 
 ### Demo 影片（點擊下圖觀看影片）
 
-[![](https://img.youtube.com/vi/6VJQiCicA-o/sddefault.jpg)](youtube.com/watch?v=6VJQiCicA-o) 
+[![](https://img.youtube.com/vi/6VJQiCicA-o/sddefault.jpg)](https://www.youtube.com/watch?v=6VJQiCicA-o) 
 
 一般來說，你可以將 pi 的 console log 導向 UART 介面，如此一來或許也不需要使用這篇提到的 serial-to-HID-keyboard 做法。但我不確定這件事情是不是需要做設定？這個 demo 影片中所執行的 image 是 Home Assistant 官方提供的 pi image。系統開機後不會進入視窗介面，而是被限制在一個 CLI 選單中。打 login 進入 shell 環境後可以使用 tab 鍵做指令的 auto-complete。
 
