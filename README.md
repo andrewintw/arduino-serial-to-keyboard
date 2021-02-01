@@ -14,7 +14,7 @@
 
 ## 前言 -- 關於 "Headless"
 
-最近因為 pi 的學習需求接觸了 `Headless installation`，所謂的 "Headless" 就是沒有 User Interface，意指在沒有螢幕、鍵盤、滑鼠的狀況下安裝系統。
+最近因為學習需求接觸了 `Headless installation`，所謂的 "Headless" 就是沒有 User Interface，意指在沒有螢幕、鍵盤、滑鼠的狀況下安裝系統。
 
 關於 Headless 的安裝方式不是這一篇要講的重點，如果你曾使用過 Pi Zero、甚至是 Home Assistant，應該對這樣的安裝方式感到熟悉。通常需要使用 Headless 模式安裝的情況都是因為沒有多餘的螢幕、鍵盤，或者...只是因為懶惰 XD。
 
@@ -325,14 +325,14 @@ VM Demo 影片：（點擊下圖觀看影片）
 
 ### Demo 影片（點擊下圖觀看影片）
 
-[![](https://img.youtube.com/vi/6VJQiCicA-o/sddefault.jpg)](https://www.youtube.com/watch?v=6VJQiCicA-o) 
+[![](https://img.youtube.com/vi/RSEqx5DlrbU/sddefault.jpg)](https://www.youtube.com/watch?v=RSEqx5DlrbU) 
 
 一般來說，你可以將 pi 的 console log 導向 UART 介面，如此一來或許也不需要使用這篇提到的 serial-to-HID-keyboard 做法。但我不確定這件事情是不是需要做設定？這個 demo 影片中所執行的 image 是 Home Assistant 官方提供的 pi image。系統開機後不會進入視窗介面，而是被限制在一個 CLI 選單中。打 login 進入 shell 環境後可以使用 tab 鍵做指令的 auto-complete。
 
 一般來說 linux kernel 會預設啟用 USB keyboard 的驅動程式，你可以發現在插入 DigiSpark  後，需等待一段時間讓驅動程式載入核心後才能使用（DigiSpark 會亮燈）。
 
 
-從此你就可以隨身帶著 USB HDMI 擷取卡、和這條 Serial-to-HID-keyboard 的線材。走到哪都不用怕沒有鍵盤螢幕可以操作 Linux :D
+從此你就可以隨身帶著 USB HDMI 擷取卡、和這條 Serial-to-HID-keyboard 的線材。走到哪都不用怕沒有鍵盤螢幕可以操作 Raspberry Pi :D
 
 ![](images/hdmi-ser2hid.jpg)
 
