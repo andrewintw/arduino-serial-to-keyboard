@@ -32,6 +32,8 @@ USB HDMI 影像擷取卡插入筆電後，電腦端就會多一個 Video Input �
 
 [![](https://img.youtube.com/vi/nui8kXvUAys/sddefault.jpg)](https://www.youtube.com/watch?v=nui8kXvUAys)
 
+目前 Android phone/pad 對這件事情的支援比較方便，所需購買的 OTG 線材也算便宜。如果是 iOS，必須使用支援 UVC（USB Video Class）的 lightning 線材。目前我只找到 [febon.net](https://www.febon.net/products/usb-uvc-webcam-to-lightning?locale=zh-hant) 上有這樣的產品，但是...超級貴！需要台幣 $5669。
+
 
 通常操作電腦時的使用者介面指的是 KVM，也就是鍵盤(Keyboard)、顯示器(Video)、滑鼠(Mous)的意思。既然現在 Video 已經可以透過一支 USB HDMI 影像擷取 dongle 做到分享筆電的螢幕，那麼你應該會想知道 -- 剩下的 KM（鍵盤和滑鼠）有沒有可能做到呢？
 
