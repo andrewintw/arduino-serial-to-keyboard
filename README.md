@@ -26,7 +26,7 @@
 
 USB HDMI 影像擷取卡插入筆電後，電腦端就會多一個 Video Input 的裝置。接著只要使用 "任何可以選擇 Video 輸入來源" 的軟體都可以看到 HDMI Input 的 Video 訊號。例如配合 [OBS Studio](https://obsproject.com/) 的軟體就可以看到畫面了（甚至可以錄下畫面）。此外如果你是 Windows 10 的使用者，使用 [Windows Camera App](https://www.microsoft.com/zh-tw/p/windows-camera/9wzdncrfjbbg?activetab=pivot:overviewtab) 也可以從這個 HDMI Input 取得畫面。 
 
-### 補充應用
+### 補充手機/平板的應用
 
 關於 USB HDMI 影像擷取卡的應用，只要再透過一條 OTG 的傳輸線，就可以直接使用手機或平板當成 Raspberry Pi 的應急用螢幕。（點擊下圖觀看影片）
 
