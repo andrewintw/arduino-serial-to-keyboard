@@ -37,6 +37,9 @@
 
 USB HDMI 影像擷取卡插入筆電後，電腦端就會多一個 Video Input 的裝置。接著只要使用 "任何可以選擇 Video 輸入來源" 的軟體都可以看到 HDMI Input 的 Video 訊號。例如配合 [OBS Studio](https://obsproject.com/) 的軟體就可以看到畫面了（甚至可以錄下畫面）。此外如果你是 Windows 10 的使用者，使用 [Windows Camera App](https://www.microsoft.com/zh-tw/p/windows-camera/9wzdncrfjbbg?activetab=pivot:overviewtab) 也可以從這個 HDMI Input 取得畫面。 
 
+ps: 事實上 VLC media player 也可以用，但我實測的結果解析度好差，還需要研究怎麼微調（想到就懶了 XD）
+
+
 ### 補充手機/平板的應用
 
 關於 USB HDMI 影像擷取卡的應用，只要再透過一條 OTG 的傳輸線，就可以直接使用手機或平板當成 Raspberry Pi 的應急用螢幕。（點擊下圖觀看影片）
@@ -319,10 +322,19 @@ VM Demo 影片：（點擊下圖觀看影片）
 
 ![](images/share-keyboard-monitor.png)
 
-Demo 影片: (coming soon...XD)
+
+### Demo 影片（點擊下圖觀看影片）
+
+[![](https://img.youtube.com/vi/6VJQiCicA-o/sddefault.jpg)](youtube.com/watch?v=6VJQiCicA-o) 
+
+一般來說，你可以將 pi 的 console log 導向 UART 介面，如此一來或許也不需要使用這篇提到的 serial-to-HID-keyboard 做法。但我不確定這件事情是不是需要做設定？這個 demo 影片中所執行的 image 是 Home Assistant 官方提供的 pi image。系統開機後不會進入視窗介面，而是被限制在一個 CLI 選單中。打 login 進入 shell 環境後可以使用 tab 鍵做指令的 auto-complete。
+
+一般來說 linux kernel 會預設啟用 USB keyboard 的驅動程式，你可以發現在插入 DigiSpark  後，需等待一段時間讓驅動程式載入核心後才能使用（DigiSpark 會亮燈）。
 
 
 從此你就可以隨身帶著 USB HDMI 擷取卡、和這條 Serial-to-HID-keyboard 的線材。走到哪都不用怕沒有鍵盤螢幕可以操作 Linux :D
+
+![](images/hdmi-ser2hid.jpg)
 
 ## 參考資料
 
