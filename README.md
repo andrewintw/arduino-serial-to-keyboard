@@ -49,6 +49,15 @@ ps: 事實上 VLC media player 也可以用，但我實測的結果解析度好�
 目前 Android phone/pad 對這件事情的支援比較方便，所需購買的 OTG 線材也算便宜。如果是 iOS，必須使用支援 UVC（USB Video Class）的 lightning 線材。目前我只找到 [febon.net](https://www.febon.net/products/usb-uvc-webcam-to-lightning?locale=zh-hant) 上有這樣的產品，但是...超級貴！需要台幣 $5669。
 
 
+### 補充 Linux console
+
+一般來說，你可以將 pi 的 console 導向 UART 介面，如此一來或許也不需要使用這篇提到的 serial-to-HID-keyboard 做法，只要查詢你手邊 pi 的 UART 腳位，並將腳位接至 USB-to-serial 即可。根據 pi 官方的手冊 [UART configuration](https://www.raspberrypi.org/documentation/configuration/uart.md) 指出。Primary UART 是被預設指定給 Linux console 使用的。某些支援藍芽版本的 pi，UART 預設會被藍芽占用，需要再額外設定。
+
+如果使用 USB 模擬 HID 鍵盤就不需要管這些事情，不管是哪一種型號的 pi，只要接上本篇所製作的 USB 開發板，pi 就會認為接入了一個鍵盤。
+
+
+### 小結
+
 通常操作電腦時的使用者介面指的是 KVM，也就是鍵盤(Keyboard)、顯示器(Video)、滑鼠(Mous)的意思。既然現在 Video 已經可以透過一支 USB HDMI 影像擷取 dongle 做到分享筆電的螢幕，那麼你應該會想知道 -- 剩下的 KM（鍵盤和滑鼠）有沒有可能做到呢？
 
 ![](images/share-keyboard-and-mouse.png)
@@ -327,7 +336,7 @@ VM Demo 影片：（點擊下圖觀看影片）
 
 [![](https://img.youtube.com/vi/RSEqx5DlrbU/sddefault.jpg)](https://www.youtube.com/watch?v=RSEqx5DlrbU) 
 
-一般來說，你可以將 pi 的 console log 導向 UART 介面，如此一來或許也不需要使用這篇提到的 serial-to-HID-keyboard 做法。但我不確定這件事情是不是需要做設定？這個 demo 影片中所執行的 image 是 Home Assistant 官方提供的 pi image。系統開機後不會進入視窗介面，而是被限制在一個 CLI 選單中。打 login 進入 shell 環境後可以使用 tab 鍵做指令的 auto-complete。
+這個 demo 影片中所執行的 image 是 Home Assistant 官方提供的 pi image。系統開機後不會進入視窗介面，而是被限制在一個 CLI 選單中。打 login 進入 shell 環境後可以使用 tab 鍵做指令的 auto-complete。
 
 pi 的 Linux kernel 通常會預設編入 USB keyboard 的驅動程式，影片中可以發現在插入 DigiSpark 後，需等待一段時間讓驅動程式載入核心後才能使用（DigiSpark 會亮燈）。
 
