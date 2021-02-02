@@ -326,7 +326,6 @@ VM Demo 影片：（點擊下圖觀看影片）
 [![](https://img.youtube.com/vi/uBaW8750mxo/sddefault.jpg)](https://www.youtube.com/watch?v=uBaW8750mxo)
 
 
-
 最終的環境設置如下。螢幕、鍵盤都直接共享 host 端的筆電。
 
 ![](images/share-keyboard-monitor.png)
