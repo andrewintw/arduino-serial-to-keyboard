@@ -4,7 +4,7 @@
 
 **NOTE**: This article was translated by ChatGPT from the Traditional Chinese version, so it might look a bit scary. If you can read Chinese, you can refer to [README.zh_tw.md | 中文版 README](README.zh_tw.md)
 
-## About This Article
+## About the article
 
 This article explores how to directly share your laptop's screen and keyboard with the Raspberry Pi.
 
@@ -15,7 +15,7 @@ I personally categorize this sharing method as an "emergency use" case. So while
 PS: If you're in a hurry and want to skip the research part, you can jump directly to the [DIY Ideas](#diy-idea) section.
 
 
-## Introduction - About "Headless"
+## Introduction - about "Headless"
 
 I recently came across `Headless installation` due to my learning needs. The term "Headless" refers to a setup without a user interface, meaning installing a system without a monitor, keyboard, or mouse.
 
@@ -67,7 +67,7 @@ when we talk about the user interface in computer terms, we refer to KVM, which 
 ![](images/share-keyboard-and-mouse.png)
 
 
-## Existing Solutions
+## Existing solutions
 
 Regarding the sharing of KVM, there are already some solutions available in the market. Some products can perfectly solve the sharing of KVM, some only provide KM sharing, but not every solution allows you to use the host's built-in screen, mouse, and keyboard directly. Some solutions may even require the setup of a local area network environment in advance.
 
