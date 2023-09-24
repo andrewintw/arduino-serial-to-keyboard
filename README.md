@@ -2,7 +2,7 @@
 
 *Using arduino-serial-to-keyboard*
 
-**NOTE**: This article was translated by ChatGPT from the Traditional Chinese version, so it might look a bit scary. If you can read Chinese, you can refer to [README.zh_tw.md | 中文版 README](README.zh_tw.md)
+**NOTE**: This article was translated by ChatGPT from the Traditional Chinese version, so it might look a bit scary. If you can read Chinese, you can refer to [中文版 README(README.zh_tw.md)](README.zh_tw.md)
 
 ## About the article
 
