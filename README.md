@@ -12,7 +12,7 @@ While VNC, Synergy (or Barrier) can accomplish these tasks, they require a funct
 
 I personally categorize this sharing method as an "emergency use" case. So while I've discovered some decent solutions during my research, if the cost is too high, it may not be the best option for emergency situations.
 
-PS: If you're in a hurry and want to skip the research part, you can jump directly to the [DIY Ideas](#DIY-Ideas) section.
+PS: If you're in a hurry and want to skip the research part, you can jump directly to the [DIY Ideas](#diy-idea) section.
 
 
 ## Introduction - About "Headless"
